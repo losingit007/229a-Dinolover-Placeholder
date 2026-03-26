@@ -6,6 +6,7 @@ public class ThirdPersonMovement : MonoBehaviour
 {
     public float dashForce;
     private Rigidbody rb;
+    private int jumpCount;
 
     void Start()
     {
@@ -21,9 +22,14 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             rb.AddForce(Vector3.right * dashForce,ForceMode.Impulse);
         }
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && jumpCount < 1)
         {
-            rb.AddForce(Vector3.forward * dashForce,ForceMode.Impulse);
+            rb.AddForce(new Vector3 (0,1,1) * dashForce,ForceMode.Impulse);
+            jumpCount ++;
         }
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        jumpCount = 0;
     }
 }
