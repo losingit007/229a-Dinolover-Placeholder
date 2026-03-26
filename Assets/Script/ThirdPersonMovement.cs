@@ -5,6 +5,8 @@ using System.Collections;
 public class ThirdPersonMovement : MonoBehaviour
 {
     public float dashForce;
+    public float jumpForce;
+    public float maxSpeed;
     private Rigidbody rb;
     private int jumpCount;
 
@@ -12,6 +14,12 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
+    void FixedUpdate() {
+    if (rb.linearVelocity.magnitude > maxSpeed) 
+    {
+        rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
+    }
+}
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.A))
@@ -24,7 +32,7 @@ public class ThirdPersonMovement : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Space) && jumpCount < 1)
         {
-            rb.AddForce(new Vector3 (0,1,1) * dashForce,ForceMode.Impulse);
+            rb.AddForce(new Vector3 (0,1,1) * jumpForce,ForceMode.Impulse);
             jumpCount ++;
         }
     }
