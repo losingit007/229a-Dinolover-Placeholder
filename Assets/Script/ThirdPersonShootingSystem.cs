@@ -11,7 +11,7 @@ public class ThirdPersonShootingSystem : MonoBehaviour
     
     [SerializeField] private Transform perfabBulletprojectile;
     [SerializeField] private Transform spawnBulletPosition;
-    
+    public thirdPersonCamera playerMouse;
 
 
     void Update()
@@ -26,7 +26,7 @@ public class ThirdPersonShootingSystem : MonoBehaviour
 
         }
 
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && !playerMouse.isPaused)
         {
             Vector3 aimDir = (mouseWorldPosition - spawnBulletPosition.position).normalized;
             Instantiate(perfabBulletprojectile,spawnBulletPosition.position,Quaternion.LookRotation(aimDir,Vector3.up));

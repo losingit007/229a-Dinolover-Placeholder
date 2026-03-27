@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-guid: 1fd31868d68903d4f9e2c4a3b7ef98f3
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155776
-  packageName: Free Sound Effects Pack
-  packageVersion: 1.0
-  assetPath: Assets/Free Pack/Explosion 1.wav
-  uploadId: 333958
+guid: b77f81b3e22795a47a30b70f96258991
 AudioImporter:
   externalObjects: {}
   serializedVersion: 8
@@ -18,7 +11,7 @@ AudioImporter:
     compressionFormat: 1
     quality: 1
     conversionMode: 0
-    preloadAudioData: 1
+    preloadAudioData: 0
   platformSettingOverrides: {}
   forceToMono: 0
   normalize: 1
