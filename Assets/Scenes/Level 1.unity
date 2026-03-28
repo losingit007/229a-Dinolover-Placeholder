@@ -2916,7 +2916,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284746280}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.019374043, y: 0.067301705, z: 0.0013071167, w: 0.99754375}
+  m_LocalRotation: {x: -0.019372981, y: 0.06810987, z: 0.0013228129, w: 0.99748886}
   m_LocalPosition: {x: 0, y: 14.12, z: -18.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9399,7 +9399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a16fda7305c8a02449162a79cd33bb57, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9601,19 +9601,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5617950647635565959, guid: 57288b5cdbbe0c3478d7cebbb0b7f2ef, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99754375
+      value: 0.99748886
       objectReference: {fileID: 0}
     - target: {fileID: 5617950647635565959, guid: 57288b5cdbbe0c3478d7cebbb0b7f2ef, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.01937404
+      value: -0.01937298
       objectReference: {fileID: 0}
     - target: {fileID: 5617950647635565959, guid: 57288b5cdbbe0c3478d7cebbb0b7f2ef, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.06730169
+      value: 0.06810986
       objectReference: {fileID: 0}
     - target: {fileID: 5617950647635565959, guid: 57288b5cdbbe0c3478d7cebbb0b7f2ef, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0013071162
+      value: 0.0013228128
       objectReference: {fileID: 0}
     - target: {fileID: 5617950647635565959, guid: 57288b5cdbbe0c3478d7cebbb0b7f2ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
